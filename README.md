@@ -1,2 +1,2 @@
 # Fly-Bird
-Fly Bird 会飞的小鸟 游戏
+Fly Bird 游戏
