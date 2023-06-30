@@ -1,0 +1,166 @@
+/**
+ * @Author Mike白
+ * @Date  2023/06/01
+ * @FlyBird小游戏
+**/
+#box {
+    width: 343px;
+    height: 480px;
+    margin: 100px auto;
+    background: url("../img/bg.jpg") no-repeat;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+
+#scoreBoard {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+}
+
+@keyframes head {
+    0% {
+        top: 100px
+    }
+    50% {
+        top: 130px
+    }
+    100% {
+        top: 100px
+    }
+}
+
+#head {
+    width: 260px;
+    height: 77px;
+    position: absolute;
+    left: 45px;
+    background: url("../img/head.jpg") no-repeat;
+    top: 100px;
+    animation: head 1.6s linear infinite
+}
+
+#head > div {
+    width: 40px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: url("../img/bird1.png") no-repeat
+}
+
+@keyframes bird {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+#head > div > img {
+    animation: bird 1s linear infinite
+}
+
+#start {
+    position: absolute;
+    left: 130px;
+    top: 280px
+}
+
+@keyframes slider {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -343px
+    }
+}
+
+#slider {
+    position: absolute;
+    left: 0;
+    top: 422px;
+    width: 300%;
+    animation: slider 3s linear infinite
+}
+
+#slider > img {
+    float: left
+}
+
+#flyBird {
+    position: absolute;
+    top: 140px;
+    left: 30px;
+    display: none
+}
+
+#pipeBox {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 422px; /*background: #00000099;*/
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+#pipeBox > li {
+    width: 62px;
+    height: 100%;
+    position: absolute;
+    left: 430px;
+    top: 0; /*background: lightcyan;*/
+    list-style: none
+}
+
+#pipeBox > li > .topPipe {
+    width: 100%;
+    background: url("../img/up_mod.png");
+    position: absolute
+}
+
+.topPipe > img {
+    position: absolute;
+    bottom: 0
+}
+
+#pipeBox > li > .bottomPipe {
+    width: 100%;
+    background: url("../img/down_mod.png");
+    position: absolute;
+    bottom: 0
+}
+
+#over {
+    width: 269px;
+    height: 135px;
+    position: absolute;
+    left: 40px;
+    top: 120px;
+    display: none
+}
+
+#over > img:nth-child(1) {
+    position: absolute;
+    left: 25px;
+    top: -42px;
+}
+
+#over > img:nth-child(3) {
+    position: absolute;
+    left: 35px;
+    top: 60px;
+}
+
+#ok {
+    position: absolute;
+    left: 120px;
+    top: 280px;
+    display: none
+}
+
+
+
